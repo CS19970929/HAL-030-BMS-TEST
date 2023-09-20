@@ -33,6 +33,8 @@ extern "C" {
 /* USER CODE BEGIN Includes */
 #include "stdint.h"
 
+#include "iwdg.h"
+
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -58,8 +60,14 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define DI_Pin GPIO_PIN_13
+#define DI_GPIO_Port GPIOC
+#define AFE_ALARM_Pin GPIO_PIN_1
+#define AFE_ALARM_GPIO_Port GPIOA
 #define led_Pin GPIO_PIN_2
 #define led_GPIO_Port GPIOB
+#define AFE_WAKEUP_Pin GPIO_PIN_7
+#define AFE_WAKEUP_GPIO_Port GPIOF
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
